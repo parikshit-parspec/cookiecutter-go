@@ -1,5 +1,5 @@
-# Cookiecutter-Go
-A template to create a Parspec service in Go.
+# {{cookiecutter.app_name}}
+{{cookiecutter.project_short_description}}
 
 ```
         ________                                         
@@ -9,12 +9,3 @@ A template to create a Parspec service in Go.
         /_/     \__,_/ /_/    /____/ _  .___/\___/\___/  
                                      /_/                 
 ```
-
-## How to use
-### Install cookiecutter:
-
-`brew install cookiecutter`
-
-### Run cookiecutter on this repo:
-
-`cookiecutter cookiecutter-go/`
