@@ -28,3 +28,6 @@ __debug_bin
 
 # Environment variables
 .env
+
+# MacOS files
+.DS_Store
