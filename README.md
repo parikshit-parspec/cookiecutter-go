@@ -17,4 +17,4 @@ A template to create a Parspec service in Go.
 
 ### Run cookiecutter on this repo:
 
-`cookiecutter cookiecutter-go/`
+`cookiecutter gh:parikshit-parspec/cookiecutter-go`
