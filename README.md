@@ -13,8 +13,12 @@ A template to create a Parspec service in Go.
 ## How to use
 ### Install cookiecutter:
 
-`brew install cookiecutter`
+```
+brew install cookiecutter
+```
 
 ### Run cookiecutter on this repo:
 
-`cookiecutter gh:parikshit-parspec/cookiecutter-go`
+```
+cookiecutter gh:parikshit-parspec/cookiecutter-go`
+```
