@@ -19,6 +19,7 @@ func main() {
 
 	// Routes
 	e.GET("/", view.Index)
+	e.GET("/marco", view.Marco)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":1323"))
