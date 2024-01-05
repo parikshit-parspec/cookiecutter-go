@@ -20,5 +20,5 @@ brew install cookiecutter
 ### Run cookiecutter on this repo:
 
 ```
-cookiecutter gh:parikshit-parspec/cookiecutter-go`
+cookiecutter gh:parikshit-parspec/cookiecutter-go
 ```
