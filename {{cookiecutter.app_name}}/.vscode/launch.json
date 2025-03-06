@@ -10,7 +10,10 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/cmd/{{cookiecutter.app_name}}/main.go",
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "{{cookiecutter.app_name|upper}}_ENV": "dev"
+            }
         }
     ]
 }

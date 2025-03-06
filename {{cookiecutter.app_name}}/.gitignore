@@ -31,3 +31,9 @@ __debug_bin
 
 # MacOS files
 .DS_Store
+
+# Secrets
+config/secrets.json
+
+# JetBrains IDE files
+.idea/*
