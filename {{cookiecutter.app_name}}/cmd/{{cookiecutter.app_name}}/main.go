@@ -1,7 +1,12 @@
 package main
 
 import (
+	"fmt"
+
 	"{{cookiecutter.app_name}}/pkg/view"
+
+	"github.com/gookit/config/v2"
+	"github.com/gookit/config/v2/json"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
