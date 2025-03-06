@@ -10,7 +10,7 @@ import (
 func main() {
 	// Load config
 	config.AddDriver(json.Driver)
-	env := config.GetEnv("_ENV", "dev")
+	env := config.GetEnv("{{cookiecutter.app_name|upper}}_ENV", "dev")
 	err := config.LoadFiles("config/" + env + ".json")
 	if err != nil {
 		fmt.Printf("error loading config: %v\n", err)
@@ -21,11 +21,15 @@ func main() {
 		fmt.Printf("error loading secrets: %v\n", err)
 		fmt.Println("if the task is running in ECS, the secrets file is not needed")
 	}
-	
+
 	e := echo.New()
 
 	// Middleware
-	e.Use(middleware.Logger())
+	e.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
+		Skipper: func(c echo.Context) bool {
+			return c.Path() == "/marco"
+		},
+	}))
 	e.Use(middleware.Recover())
 
 	// Static files
